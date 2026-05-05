@@ -418,6 +418,8 @@ footer{background:#080808;border-top:1px solid rgba(184,147,58,0.1);padding:56px
 <!-- APPLY -->
 <section class="sec" id="apply">
   <div class="inner">
+    <form name="application" method="POST" data-netlify="true" enctype="multipart/form-data">
+  <input type="hidden" name="form-name" value="application">
     <div class="lbl">Apply</div>
     <h2>THINK YOU<br>MAKE THE LIST?</h2>
     <p class="body-p" style="margin-bottom:40px;">Applications reviewed within 48-72 hours. We only accept barbers who meet The Cut List Global standard. If you're serious about your craft — apply. If not — don't waste our time.</p>
@@ -451,11 +453,23 @@ footer{background:#080808;border-top:1px solid rgba(184,147,58,0.1);padding:56px
         </select>
       </div>
       <div class="form-full"><label class="fl">Why Do You Make The Cut List?</label><textarea class="fi" rows="5" placeholder="Be specific. What makes your work elite? What separates you from every other barber in your city?" id="wy" style="resize:vertical;"></textarea></div>
-      <button class="submit" onclick="submitApp()">SUBMIT APPLICATION →</button>
+      <div class="form-full">
+  <label class="fl">Upload up to 5 Photos</label>
+  <input type="file" name="photos" multiple accept="image/*">
+</div>
+
+<div class="form-full">
+  <label>
+    <input type="checkbox" name="consent" required>
+    I give The Cut List Global permission to use my photos/content for marketing.
+  </label>
+</div>
+      <button class="submit" type="submit">SUBMIT APPLICATION</button>
       <div class="success" id="succ">✓ Application received. We'll review your work and be in touch within 48-72 hours.</div>
       <p class="form-note">Only serious applicants. We verify everything.<br>By applying you agree to be contacted by The Cut List Global team.</p>
     </div>
   </div>
+</form>
 </section>
 
 <footer>
@@ -468,7 +482,7 @@ footer{background:#080808;border-top:1px solid rgba(184,147,58,0.1);padding:56px
       <a href="https://instagram.com/thecutlistofficial" target="_blank">Instagram</a>
       <a href="https://tiktok.com/@thecutlistofficial" target="_blank">TikTok</a>
       <a href="https://instagram.com/fferrdz" target="_blank">@fferrdz</a>
-      <a href="mailto:ferdzsocialbuzz@gmail.com">Contact</a>
+      <a href="mailto:hello@thecutlistglobal.com">Contact</a>
     </div>
   </div>
   <div class="footer-bottom">
